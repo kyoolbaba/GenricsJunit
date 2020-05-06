@@ -22,4 +22,14 @@ public class FindMaximum {
         }
         return max;
     }
+    public String findMaxString(String firstposition, String secondposition, String thirdposition) {
+        String max = firstposition;
+        if (secondposition.compareTo(max) > 0) {
+            max = secondposition;
+        }
+        if (thirdposition.compareTo(max) > 0) {
+            max= thirdposition;
+        }
+        return max;
+    }
 }
