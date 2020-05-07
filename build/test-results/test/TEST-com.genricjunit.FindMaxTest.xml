@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.genricjunit.FindMaxTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-05-06T13:20:00" hostname="KYOOLBABA" time="0.012">
+<testsuite name="com.genricjunit.FindMaxTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-07T11:40:33" hostname="KYOOLBABA" time="0.003">
   <properties/>
-  <testcase name="testMaximumIntegerThirdPosition" classname="com.genricjunit.FindMaxTest" time="0.003"/>
-  <testcase name="testMaximumFloatThirdPosition" classname="com.genricjunit.FindMaxTest" time="0.0"/>
-  <testcase name="testMaximumStringThirdPosition" classname="com.genricjunit.FindMaxTest" time="0.0"/>
-  <testcase name="testMaximumFloatSecondPosition" classname="com.genricjunit.FindMaxTest" time="0.0"/>
-  <testcase name="testMaximumIntegerSecondPosition" classname="com.genricjunit.FindMaxTest" time="0.0"/>
   <testcase name="testMaximumIntegerFirstPosition" classname="com.genricjunit.FindMaxTest" time="0.003"/>
-  <testcase name="testMaximumStringSecondPosition" classname="com.genricjunit.FindMaxTest" time="0.001"/>
-  <testcase name="testMaximumFloatFirstPosition" classname="com.genricjunit.FindMaxTest" time="0.0"/>
-  <testcase name="testMaximumStringFirstPosition" classname="com.genricjunit.FindMaxTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

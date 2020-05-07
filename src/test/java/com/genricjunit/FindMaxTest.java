@@ -1,67 +1,61 @@
 package com.genricjunit;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class FindMaxTest {
-    FindMaximum findMaximum;
-    @Before
-    public void setUp() throws Exception {
-        findMaximum = new FindMaximum();
-    }
 
     @Test
     public void testMaximumIntegerFirstPosition() {
-        int maximumNumber =findMaximum.findMaxInStringIntegerFloat(9,2,1);
-        Assert.assertEquals(9, maximumNumber);
+        FindMax findMax = new FindMax(11,5,6,9,2);
+        Assert.assertEquals(11,(int) findMax.findMaxInStringIntegerFloat());
     }
 
     @Test
     public void testMaximumIntegerSecondPosition() {
-        int maximumNumber =findMaximum.findMaxInStringIntegerFloat(2,9,3);
-        Assert.assertEquals(9, maximumNumber);
+        FindMax findMax = new FindMax(11,55,6,9,2);
+        Assert.assertEquals(55,(int) findMax.findMaxInStringIntegerFloat());
     }
 
     @Test
     public void testMaximumIntegerThirdPosition() {
-        int maximumNumber =findMaximum.findMaxInStringIntegerFloat(2,5,10);
-        Assert.assertEquals(10, maximumNumber);
-    }
-
-    @Test
-    public void testMaximumFloatFirstPosition() {
-        float maximumNumber =findMaximum.findMaxInStringIntegerFloat(9.3f,2.8f,1.6f);
-        Assert.assertEquals(9.3f, maximumNumber,0.1);
-    }
-
-    @Test
-    public void testMaximumFloatSecondPosition() {
-        float maximumNumber =findMaximum.findMaxInStringIntegerFloat(2.8f,9.8f,3.6f);
-        Assert.assertEquals(9.8, maximumNumber,0.1);
-    }
-
-    @Test
-    public void testMaximumFloatThirdPosition() {
-        float maximumNumber =findMaximum.findMaxInStringIntegerFloat(2.8f,5.3f,10.9f);
-        Assert.assertEquals(10.9, maximumNumber,.1);
+        FindMax findMax = new FindMax(11,55,69,9,2);
+        Assert.assertEquals(69,(int) findMax.findMaxInStringIntegerFloat());
     }
 
     @Test
     public void testMaximumStringFirstPosition() {
-        String maximumString =(String)findMaximum.findMaxInStringIntegerFloat("A","B","C");
-        Assert.assertEquals("C", maximumString);
+        FindMax findMax = new FindMax("monkey","Zebra","A","Bat");
+        Assert.assertEquals("monkey",(String) findMax.findMaxInStringIntegerFloat());
     }
 
     @Test
     public void testMaximumStringSecondPosition() {
-        String maximumString =findMaximum.findMaxInStringIntegerFloat("B","C","A");
-        Assert.assertEquals("C",maximumString);
+        FindMax findMax = new FindMax("A","monkey","Bat","Zebra");
+        Assert.assertEquals("monkey",(String) findMax.findMaxInStringIntegerFloat());
     }
 
     @Test
     public void testMaximumStringThirdPosition() {
-        String maximumString =findMaximum.findMaxInStringIntegerFloat("B","C","B");
-        Assert.assertEquals("C",maximumString);
+        FindMax findMax = new FindMax("A","Bat","monkey","Zebra");
+        Assert.assertEquals("monkey",(String) findMax.findMaxInStringIntegerFloat());
+    }
+
+    @Test
+    public void testMaximumFloatFirstPosition() {
+        FindMax findMax = new FindMax(8.1f,7.5f,5.6f);
+        Assert.assertEquals(8.1f, findMax.findMaxInStringIntegerFloat());
+    }
+
+    @Test
+    public void testMaximumFloatSecondPosition() {
+        FindMax findMax = new FindMax(8.1f,7.5f,5.6f);
+        Assert.assertEquals(8.1f, findMax.findMaxInStringIntegerFloat());
+    }
+
+    @Test
+    public void testMaximumFloatThirdPosition() {
+        FindMax findMax = new FindMax(8.1f,7.5f,5.6f);
+        Assert.assertEquals(8.1f, findMax.findMaxInStringIntegerFloat());;
     }
 }
